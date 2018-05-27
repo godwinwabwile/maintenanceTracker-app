@@ -351,7 +351,7 @@ hr {
 			color: #878e63;
 		}
 /*_______________media_______________*/
-	@media screen and (max-width: 478px){
+	@media screen and (max-width: 790px){
 		body{
 			font-size: 13px;
 
@@ -404,6 +404,9 @@ hr {
 		.container input{
 			padding-right: 1%;
 		}
+		#topbar{
+			width: 100%;
+		}
 		#topbar h2{
 		float: left;
 		font-size: 18px;
@@ -416,6 +419,26 @@ hr {
 		text-decoration: none;
 		color: #f1f0d1;
 		}
+		#new{
+			width: 100%;
+			float:left;
+		}
+		#resolved{
+			width: 100%;
+			float:left;
+		}
+		#rejected{
+			width: 100%;
+			float:left;
+		}
+		#resolving{
+			width: 100%;
+			float:left;
+		}
+		.cancelbtn, .signupbtn {
+       		width: 100%;
+    	}
+
 	
 
 /* Change styles for cancel button login button and signup button on extra small screens */
