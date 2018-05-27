@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>username</title>
+	<link rel="stylesheet" type="text/css" href="CSS/main.css">
+
+</head>
+<body>
+	<div id="wrapper">
+		<!--=========Top bar with logo, user name and user avator witha log out functionality=========-->
+		<div id="topbar">
+			<ul>
+				<h2><a href="#"> Maintenance <i>Tracker</i></a></h2>
+				<li><a href="#"> log out</a></li>
+				<li>User Name
+				</li>
+				<li><a href="#" onclick="document.getElementById('request').style.display='block'">Create request</a></li>
+			</ul>
+		</div>
+		<!--===================End of top bar===================-->
+	<header>
+		<h1><b><i>MAINTENANCE <i> <small>TRACKER..</small></i></i></b></h1>
+	</header>
+	<div id="request" class="request-modal">
+  <span onclick="document.getElementById('request').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="#">
+    <div class="container">
+      <h1>Your Request</h1>
+      <p>Please fill the form and help us understand you better</p>
+      <hr>
+      <label for="title"><b>Title</b></label>
+      <input type="text" placeholder="Enter title" name="title" required>
+      <hr>
+      <label for="description"><b>Description</b></label>
+      <input type="text" placeholder="Enter description" name="description" required>
+      <hr>
+      <label for="type"><b>Type</b></label>
+      <select name="typre" placeholder="Choose type">
+      	<option value="maintenance">
+      		Maintenance
+      	</option>
+      	<option value="repair">Repair</option>
+      </select>
+      <hr>
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('request').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Send</button>
+      </div>
+    </div>
+  </form>
+</div>
+	<div class="new-request darker">
+		<div id="topbar">
+			<ul>
+				<h2><a href="#"> <i>Image Background</i></a></h2>
+				<li><a href="#">Delivered</a></li>
+				<li><b>State:</b></li>
+			</ul>
+		</div>
+  		<div id="request-details"> 
+  			<p>Can my system have an shadowed image in the background? if yes, i have attached my image of choice</p>
+  			<span class="time-right">11:01</span>
+  	</div>
+	</div>
+
+	<div class="new-request darker">
+		<div id="topbar">
+			<ul>
+				<h2><a href="#"> <i>Button not functioning</i></a></h2>
+				<li><a href="#">Resolving</a></li>
+				<li><b>State:</b></li>
+			</ul>
+		</div>
+  		<div id="request-details"> 
+  			<p>The sample request button is not functioning, please work on it</p>
+  			<span class="time-right">11:01</span>
+  	</div>
+	</div>
+	<div class="new-request">
+		<div id="topbar">
+			<ul>
+				<h2><a href="#"> <i>Overlay Background</i></a></h2>
+				<li><a href="#">Resolved</a></li>
+				<li><b>State:</b></li>
+			</ul>
+		</div>
+		<div id="request-details"> 
+			<p>Please try make the overlay background abit lighter. The offgreen color is too dark...Please try make the overlay background abit lighter. The offgreen color is too dark..Please try make the overlay background abit lighter. The offgreen color is too dark</p>
+  			<span class="time-right">11:02</span>
+		</div>
+	</div>
+	<div class="new-request">
+		<div id="topbar">
+			<ul>
+				<h2><a href="#"> <i>Overlay Background</i></a></h2>
+				<li><a href="#">Resolved</a></li>
+				<li><b>State:</b></li>
+			</ul>
+		</div>
+		<div id="request-details"> 
+			<p>Please try make the overlay background abit lighter. The offgreen color is too dark...Please try make the overlay background abit lighter. The offgreen color is too dark..Please try make the overlay background abit lighter. The offgreen color is too dark</p>
+  			<span class="time-right">11:02</span>
+		</div>
+	</div>
+
+	<div class="new-request">
+		<div id="topbar">
+			<ul>
+				<h2><a href="#"> <i>Overlay Background</i></a></h2>
+				<li><a href="#">Resolved</a></li>
+				<li><b>State:</b></li>
+			</ul>
+		</div>
+		<div id="request-details"> 
+			<p>Please try make the overlay background abit lighter. The offgreen color is too dark...Please try make the overlay background abit lighter. The offgreen color is too dark..Please try make the overlay background abit lighter. The offgreen color is too dark</p>
+  			<span class="time-right">11:02</span>
+		</div>
+	</div>
+	<div class="new-request darker">
+		<div id="topbar">
+			<ul>
+				<h2><a href="#"> <i>Online joke cracker</i></a></h2>
+				<li><a href="#"><b>Rejected !!</b></a></li>
+				<li><b>State:</b></li>
+			</ul>
+		</div>
+		<div id="request-details"> 
+			<p>I need an onnline joke cracker on my system</p>
+  			<span class="time-right">11:02</span>
+		</div>
+	</div>
+<footer>
+	<div id="aside">
+		<img src="images/images.png">
+	</div>
+	<div id="aside">
+		<ul>
+			<h3>Skills </h3>
+		<li><a href="#">GIT</a></li>
+		<li><a href="">PT</a></li>
+		<li><a href="">HTML5</a> </li>
+		<li><a href="">CSS & JS</a> </li>
+		</ul>
+		
+	</div>
+	<div id="aside">
+		<h3>find </h3>
+	</div>
+	<div id="clearfix"></div>
+</footer>
+	</div>
+	<p style="text-align: center;">&copy;MAINTENANCE TRACKER <i> <cite>by Godwin Wabwile</cite> </i>  @2018</p>
+</body>
+</html>
