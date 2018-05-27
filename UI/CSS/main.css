@@ -1,0 +1,426 @@
+	body{
+		background: #f1f0d1;
+		font-family: Verdana, Tahoma, Ariel, San-serif;
+		font-size: 18px;
+		overflow: auto;
+	}
+	h1,h2,h3{
+		padding: 5%;
+		text-align: center;
+		color: #878E63;
+	}
+	p{
+		padding: 2%;
+		color: #878E63;
+
+	}
+	img{
+		text-align: center;
+		max-width: 100%;
+		height: auto;
+		width: auto;
+	}
+	#wrapper{
+		margin: 0 auto;
+		max-width: 100%;
+		width: 98%;
+		background: #FEFBE8;
+	}
+	#topbar{
+		width: 100%;
+		height: auto;
+		background: skyblue;
+		
+		overflow: hidden;
+	}
+	#topbar p{
+		text-align: right;
+		color: #f1f0d1;
+		padding: 2%;
+		font-size: 13px;
+	}
+	#topbar ul{
+		list-style: none;
+		text-decoration: none;
+	}
+	#topbar h2{
+		float: left;
+		font-size: 18px;
+		margin-top: -5%;
+		margin-left: -8%;
+		margin-bottom: -3%;
+
+	}
+	#topbar h2 a{
+		text-decoration: none;
+		color: #f1f0d1;
+	}
+	#topbar ul li{
+		margin-top: -2px;
+		color:  #f1f0d1;
+		float:right;
+		padding-right: 5px;
+		padding-left: 5px;
+	}
+
+	#topbar ul li img{
+		height: 30px;
+		width: 30px;
+		border: 50%;
+	}
+	#topbar ul li a{
+		text-decoration: none;
+		color:#f1f0d1; 
+	}
+	
+	#topbar ul li a:hover, #topbar ul li a:focus{
+		background: darkblue;
+		color: #f1f0d1;
+
+	}
+	#topbar ul li a b{
+		color: red;
+	}
+	nav{
+		width: 99%;
+	}
+	nav ul{
+		list-style: none;
+		padding-left: 50px;
+	}
+	nav ul li{
+		border: 1px solid skyblue;
+		margin-right: 1%;
+		float: left;
+		width: 45%;
+	}
+	nav ul li a{
+		background: #f1f0d1;
+		padding: 5% 12%;
+		display: block;
+		font-weight: bold;
+		font-size: 18px;
+		color: skyblue;
+		text-decoration: none;
+		text-align: center;
+	}
+	nav ul li a:hover, nav ul li.active a{
+		background: #878E63;
+		color: #f1f0d1;
+	}
+	#clearfix{
+		clear: both;
+	}
+	.left-col{
+		float: left;
+		width: 55%;
+		height: auto;
+	}
+	.left-col p{
+		text-indent: 50px;
+	}
+	.side-bar{
+		width: 40%;
+		float:right;
+		margin: 1%;
+		text-align: center;
+		border: 1% solid #878E63;
+
+	}
+	#tacker{
+		width: 100%;
+ 		height: auto;
+ 		border: 1% solid #878E63;
+ 		float: right;
+ 		margin: 0 auto;
+ 		padding: 1%;
+	}
+	#aside{
+		width:29%;
+		margin: 2% 2%;
+		float: left;
+
+	}
+	#aside img{
+		text-align: center;
+		border-radius: 50%;
+	}
+
+	#aside ul{
+		list-style: none;
+	}
+	#aside ul li{
+		text-align: center;
+	}
+	#aside ul li a{
+		
+		text-decoration: none;
+		color: #878E63;
+		font-size: 18px;
+	}
+	#copyright{
+		text-align: center;
+	}
+/* Full-width input fields */
+input[type=text], input[type=password],select {
+    width: 95%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity:1;
+}
+#checkbox{
+	margin-bottom:15px;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+.cancelbtn a{
+	text-decoration: none;
+	font-size: 13px;
+	color: #f1f0d1;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+.exitbtn{
+	float: left;
+ 	width: 100%;
+ 	background-color: #f44336;
+}
+}
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: skyblue;
+    padding-top: 50px;
+}
+.request-modal{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: darkblue;
+    padding-top: 50px;
+}
+.filters{
+	background-color: #f1f0d1;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #FEFBE8;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 90%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f44336;;
+}
+
+.close:hover,
+.close:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+.imgcontainer{
+	text-align: center;
+}
+.imgcontainer img{
+	border-radius: 50%;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.new-request {
+    		border: 2px solid #dedede;
+    		background-color: #f1f1f1;
+    		border-radius: 5px;
+    		padding: 0 px;
+    		margin: 10px 0;
+    		height: auto;
+		}
+		.darker {
+    		border-color: #ccc;
+   			background-color: #ddd;
+		}
+		#request-nav h2{
+			color: #f1f0d1;
+			float:left;
+			margin-top: -5%;
+			margin-left: -8%;
+			margin-bottom: -5%;
+		}
+		.time-right {
+			margin-top: -2.7%;
+			margin-right: 1.5%;
+    		float: right;
+    		color: #aaa;
+		}
+		#new{
+			width: 65%;
+			float: left;
+		}
+		#new h5{
+			text-align: center;
+			color: #878e63;
+		}
+		#resolving{
+			width: 30%;
+			float:right;
+		}
+		#resolving h5{
+			text-align: center;
+			color: #878e63;
+		}
+		#resolved{
+			width: 70%;
+			float: left;
+		}
+		#resolved h5{
+			text-align: center;
+			color: #878e63;
+		}
+		#rejected{
+			width: 25%;
+			float:right;
+		}
+		#rejected h5{
+			text-align: center;
+			color: #878e63;
+		}
+/*_______________media_______________*/
+	@media screen and (max-width: 478px){
+		body{
+			font-size: 13px;
+
+		}
+		p{
+			padding: 0 auto;
+		}
+		nav{
+			margin-bottom: 10px;
+			width:100%;
+			
+		}
+		nav ul{
+			font-size: 13px;
+			list-style: none;
+			margin: 0 auto;
+			padding-left: 0px;
+		}
+		nav ul li{
+			width: 100%;
+			text-align: center;
+			margin: 0 auto;
+		}
+		.left-col p{
+		text-indent: 1%;
+		}
+		.side-bar{
+		width: 96%;
+		float:right;
+		margin: 1%;
+		text-align: center;
+		border: 1% solid #878E63;
+
+		}
+		#aside{
+			width: 100%;
+		}
+		#aside img{
+			width: 96%;
+			text-align: center;
+			border-radius: 50%;
+		}
+		.container{
+			width: 96%;
+		}
+		.container label{
+			text-indent: 2%;
+			padding-left: 2%;
+		}
+		.container input{
+			padding-right: 1%;
+		}
+		#topbar h2{
+		float: left;
+		font-size: 18px;
+		margin-top: -5%;
+		margin-left: -10%;
+		margin-bottom: -3%;
+
+		}
+		#topbar h2 a{
+		text-decoration: none;
+		color: #f1f0d1;
+		}
+	
+
+/* Change styles for cancel button login button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}
