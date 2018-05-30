@@ -89,5 +89,28 @@ class UserTests(unittest.TestCase):
         self.assertEqual(response.status_code, 400) 
     # end tests for api user signup
     
+    #tests for user sign in
+    ef test_signin_fields(self):
+        #email field
+        self.case_user['email'] = ""
+        response = self.app.post('/signin', data=json.dumps(self.case_user),content_type="application/json")
+        result = json.loads(response.data)
+        self.assertEqual(result["message"], "email field required")
+        self.assertEqual(response.status_code, 400) 
+
+        #password
+        self.case_user['email'] = "wegowabz1@gmail.com"
+        self.case_user['password'] = ""
+        response1 = self.app.post('/signin', data=json.dumps(self.case_user),content_type="application/json")
+        result1 = json.loads(response1.data)
+        self.assertEqual(result1["message"], "enter password and try again buddy")
+        self.assertEqual(response1.status_code, 400)        
+
+    def test_signin_invalid_email(self):
+        self.case_user['email'] = "godwin."
+        response = self.app.post('/signin', data=json.dumps(self.case_user),content_type="application/json")
+        result = json.loads(response.data)
+        self.assertEqual(result["message"], "Invalid email address!")
+        self.assertEqual(response.status_code, 400)
 if __name__ == "__main__":
     unittest.main()
