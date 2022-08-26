@@ -23,4 +23,4 @@ pip install -r <file-name>
 - [fake-factory](https://pypi.python.org/pypi/fake-factory) - for faking fixtures for tests.
 
 ## Development Setup
-- See the [wiki entry here](https://github.com/AndelaOSP/maintt/wiki/Dev-Setup) for details.
+- See the [wiki entry here](https://github.com/godwinwabwile/maintenanceTracker-app/wiki/Home) for details.
